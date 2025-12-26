@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOMAS videomaker - Portfólio de Aftermovies</title>
+    <meta name="description"
+        content="Portfólio de aftermovies de festas e raves. Capturando a energia e emoção dos maiores eventos em vídeos cinematográficos imersivos.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="TOMAS videomaker - Portfólio de Aftermovies">
+    <meta property="og:description"
+        content="Portfólio de aftermovies de festas e raves. Capturando a energia e emoção dos maiores eventos em vídeos cinematográficos imersivos.">
+    <meta property="og:image" content="logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="TOMAS videomaker - Portfólio de Aftermovies">
+    <meta property="twitter:description"
+        content="Portfólio de aftermovies de festas e raves. Capturando a energia e emoção dos maiores eventos em vídeos cinematográficos imersivos.">
+    <meta property="twitter:image" content="logo.png">
+
+    <!-- Preload Logo -->
+    <link rel="preload" href="logo.png" as="image">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <img src="logo.png" alt="TOMAS videomaker - Carregando" class="loading-logo-img" width="300" height="75"
+                    loading="eager">
+            </div>
+            <div class="loading-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-center"></div>
+            </div>
+            <div class="loading-text">
+                <span class="loading-dot">.</span>
+                <span class="loading-dot">.</span>
+                <span class="loading-dot">.</span>
+            </div>
+        </div>
+        <div class="loading-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="TOMAS videomaker - Logo" class="logo-img" width="200" height="50"
+                    loading="eager">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#videos" class="nav-link">Vídeos</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Background Video -->
+        <video class="hero-video hero-video-desktop" autoplay muted loop playsinline>
+            <source src="assets/videohero.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+        <video class="hero-video hero-video-mobile" autoplay muted loop playsinline>
+            <source src="assets/mobile.mov" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-logo">
+                    <img src="logo.png" alt="TOMAS videomaker - Logo Principal" class="hero-logo-img" width="500"
+                        height="125" loading="eager">
+                </div>
+                <p class="hero-description">Capturando a energia e a emoção das maiores festas em aftermovies imersivos
+                </p>
+                <a href="#videos" class="btn-primary"><span>Explorar Vídeos</span></a>
+            </div>
+            <div class="hero-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Featured Videos -->
+    <section id="featured-section" class="featured-section" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">Em Destaque</h2>
+            <div class="featured-grid" id="featured-grid">
+                <!-- Vídeos em destaque serão inseridos aqui via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos by Category -->
+    <section id="videos" class="videos-section">
+        <div class="container">
+            <!-- Category Filters -->
+            <div class="category-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="aftermovie-evento">Aftermovie Evento</button>
+                <button class="filter-btn" data-filter="aftermovie-dj">Aftermovie DJ</button>
+                <button class="filter-btn" data-filter="vídeo-drop">Vídeo Drop</button>
+            </div>
+
+            <!-- Category sections will be inserted here via JavaScript -->
+            <div id="videos-container">
+                <!-- Vídeos serão inseridos aqui via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">Sobre</h2>
+                <p class="about-text">
+                    Especializado em capturar a essência e a energia das maiores festas e raves,
+                    transformando momentos em memórias visuais imersivas através de aftermovies
+                    cinematográficos que transmitem a emoção e a atmosfera única de cada evento.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <div class="contact-content">
+                <p>Entre em contato para orçamentos e parcerias</p>
+                <div class="contact-info">
+                    <a href="mailto:contato@tomasvideomaker.com" class="contact-link">📧 contato@tomasvideomaker.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> TOMAS videomaker. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="videoPlayer"></div>
+            <div id="videoDetails"></div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
